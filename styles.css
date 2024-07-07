@@ -25,14 +25,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     padding: 10px;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
+    color: white;
 }
 
 #hero {
@@ -93,5 +95,5 @@ footer {
 }
 
 #contact {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
