@@ -43,7 +43,8 @@ function switchLanguage(language) {
         document.getElementById('projects').innerHTML = `
             <h2>Projects</h2>
             <div class="project">
-                <h3>Project 1: E-commerce### `index.html`
+                <h3>Project ### Estructura del `index.html` con Enlaces y Selección de Idioma:
+
 ```html
 <!DOCTYPE html>
 <html lang="es">
@@ -70,7 +71,7 @@ function switchLanguage(language) {
     </header>
     <main>
         <section id="hero">
-            <img src="profile.jpeg" alt="Jesús Carrilero" id="profile-image">
+            <img src="profile.jpeg" alt="Jesús Carrilero">
             <h1>Jesús Carrilero</h1>
             <p>Desarrollador Web | Freelancer</p>
         </section>
