@@ -3,83 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77b300 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .showcase {
-            min-height: 400px;
-            background: url('showcase.jpg') no-repeat 0 -400px;
-            text-align: center;
-            color: #fff;
-        }
-        .showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-        .showcase p {
-            font-size: 20px;
-        }
-        .content {
-            padding: 15px;
-        }
-        .content h2 {
-            padding: 0;
-            margin: 0;
-        }
-    </style>
+    <title>Portafolio de Jesús Carrilero</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Mi Portafolio</h1>
-        </div>
+        <h1>Jesús Carrilero</h1>
+        <p>Desarrollador Web</p>
     </header>
-    <section class="showcase">
-        <div class="container">
-            <h1>Bienvenido a Mi Portafolio</h1>
-            <p>Aquí encontrarás información sobre mis servicios y proyectos.</p>
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador web apasionado con experiencia en la creación de aplicaciones web modernas y receptivas. Me encanta aprender nuevas tecnologías y mejorar continuamente mis habilidades.</p>
+    </section>
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1: Sistema de Inventario</h3>
+            <p>Una aplicación web para gestionar inventarios de productos. Utiliza MongoDB, Express, React y Node.js (MERN stack).</p>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2: Blog Personal</h3>
+            <p>Un blog personal creado con WordPress, con un diseño personalizado y funcionalidades avanzadas.</p>
         </div>
     </section>
-    <div class="content container">
-        <h2>Sobre Mí</h2>
-        <p>Escribe aquí una breve descripción sobre ti y tus habilidades.</p>
-        <h2>Proyectos</h2>
-        <p>Aquí puedes listar algunos de tus proyectos anteriores.</p>
+    <section id="contact">
         <h2>Contacto</h2>
-        <p>Incluir información de contacto o un formulario de contacto aquí.</p>
-    </div>
+        <p>Puedes contactarme a través de mis redes sociales o enviarme un correo electrónico.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tu-perfil-linkedin">LinkedIn</a>
+            <a href="https://github.com/tu-perfil-github">GitHub</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jesús Carrilero. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
