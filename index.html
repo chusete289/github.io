@@ -1,70 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Jesús Carrilero</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chusete's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <img src="profile.jpeg" alt="Jesús Carrilero">
-            <h1>Jesús Carrilero</h1>
-            <p>Desarrollador Web | Freelancer</p>
-        </section>
-        <section id="about">
-            <h2>Sobre mí</h2>
-            <p>Soy un apasionado desarrollador web con amplia experiencia en la creación de sitios web dinámicos y responsivos. He trabajado con diversas tecnologías y frameworks para ofrecer soluciones personalizadas y de alta calidad a mis clientes. Mi objetivo es utilizar mis habilidades para ayudar a las empresas a alcanzar sus metas a través de soluciones tecnológicas innovadoras.</p>
-        </section>
-        <section id="skills">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>React, Angular, Vue.js</li>
-                <li>Node.js, Express</li>
-                <li>MongoDB, MySQL</li>
-                <li>Git, GitHub</li>
-                <li>Responsive Design</li>
-                <li>Python, Web Scraping</li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h2>Proyectos</h2>
-            <div class="project">
-                <h3>Plataforma de Innovación</h3>
-                <p>Desarrollé una plataforma innovadora que mejoró la eficiencia en un 50%. Utilizando tecnologías como React, Node.js y MongoDB, creé una solución completa desde cero.</p>
-            </div>
-            <div class="project">
-                <h3>Aplicación Móvil</h3>
-                <p>Diseñé y desarrollé una aplicación móvil que alcanzó más de 100,000 descargas en el primer mes. Implementé funcionalidades avanzadas y un diseño intuitivo utilizando React Native y Firebase.</p>
-            </div>
-            <div class="project">
-                <h3>Sistema de Gestión</h3>
-                <p>Implementé un sistema de gestión permitiendo la automatización de procesos internos y la mejora de la productividad. Utilicé Angular, Node.js y MySQL para desarrollar esta solución.</p>
-            </div>
-            <div class="project">
-                <h3>Web Scraping para Análisis de Datos</h3>
-                <p>Desarrollé múltiples scripts de web scraping utilizando Python y Beautiful Soup para extraer y analizar datos de diversas fuentes web, mejorando la toma de decisiones basadas en datos.</p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:jesuscarrilero3@gmail.com">jesuscarrilero3@gmail.com</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Jesús Carrilero. Todos los derechos reservados.</p>
-    </footer>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="language-switcher">
+        <li><a href="#" id="es" onclick="setLanguage('es')">🇪🇸</a></li>
+        <li><a href="#" id="en" onclick="setLanguage('en')">🇬🇧</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about">
+    <h1 data-es="Bienvenido a Mi Portafolio" data-en="Welcome to My Portfolio">Bienvenido a Mi Portafolio</h1>
+    <img src="profile.jpeg" alt="Profile Picture">
+    <p data-es="¡Hola! Soy Chusete, un desarrollador apasionado con experiencia en desarrollo web y scrapping de datos. Aquí hay algunos de los proyectos en los que he trabajado." data-en="Hello! I'm Chusete, a passionate developer with expertise in web development and data scraping. Here are some of the projects I've worked on.">¡Hola! Soy Chusete, un desarrollador apasionado con experiencia en desarrollo web y scrapping de datos. Aquí hay algunos de los proyectos en los que he trabajado.</p>
+  </section>
+  <section id="projects">
+    <h2 data-es="Proyectos" data-en="Projects">Proyectos</h2>
+    <div class="project">
+      <h3 data-es="Plataforma Innovadora Ejemplo" data-en="Innovative Platform Example">Plataforma Innovadora Ejemplo</h3>
+      <p data-es="Una plataforma para gestionar ideas y proyectos innovadores, utilizando React, Node.js y MongoDB." data-en="A platform for managing ideas and innovative projects, utilizing React, Node.js, and MongoDB.">Una plataforma para gestionar ideas y proyectos innovadores, utilizando React, Node.js y MongoDB.</p>
+      <a href="https://github.com/example/innovative-platform" target="_blank" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
+    </div>
+    <div class="project">
+      <h3 data-es="Aplicación Móvil Ejemplo" data-en="Mobile App Example">Aplicación Móvil Ejemplo</h3>
+      <p data-es="Una aplicación móvil desarrollada con React Native y Firebase, enfocada en la gestión de tareas." data-en="A mobile application developed with React Native and Firebase, focused on task management.">Una aplicación móvil desarrollada con React Native y Firebase, enfocada en la gestión de tareas.</p>
+      <a href="https://github.com/example/mobile-app" target="_blank" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
+    </div>
+    <div class="project">
+      <h3 data-es="Sistema de Gestión Ejemplo" data-en="Management System Example">Sistema de Gestión Ejemplo</h3>
+      <p data-es="Un sistema de gestión para automatizar procesos internos, desarrollado con Angular, Node.js y MySQL." data-en="A management system to automate internal processes, developed with Angular, Node.js, and MySQL.">Un sistema de gestión para automatizar procesos internos, desarrollado con Angular, Node.js y MySQL.</p>
+      <a href="https://github.com/example/management-system" target="_blank" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
+    </div>
+    <div class="project">
+      <h3 data-es="Scraping Web Ejemplo" data-en="Web Scraping Example">Scraping Web Ejemplo</h3>
+      <p data-es="Scripts de scraping web en Python usando Beautiful Soup y Scrapy para extraer y analizar datos." data-en="Web scraping scripts in Python using Beautiful Soup and Scrapy to extract and analyze data.">Scripts de scraping web en Python usando Beautiful Soup y Scrapy para extraer y analizar datos.</p>
+      <a href="https://github.com/example/web-scraping" target="_blank" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
+    </div>
+  </section>
+  <section id="contact">
+    <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+    <p data-es="Correo Electrónico: chusete@example.com" data-en="Email: chusete@example.com">Correo Electrónico: chusete@example.com</p>
+    <p data-es="Teléfono: +123 456 7890" data-en="Phone: +123 456 7890">Teléfono: +123 456 7890</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 Chusete. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
