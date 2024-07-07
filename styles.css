@@ -42,11 +42,11 @@ nav ul li a:hover {
     right: 20px;
 }
 
-.language-switcher a {
-    color: white;
-    text-decoration: none;
+.language-switcher img {
+    width: 30px;
+    height: 20px;
     margin-left: 10px;
-    font-size: 1.2em;
+    cursor: pointer;
 }
 
 #hero {
@@ -94,6 +94,17 @@ ul li {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
 }
 
 footer {
