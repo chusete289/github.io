@@ -2,38 +2,44 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f9;
 }
 
 header {
   background-color: #333;
   padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .nav-links {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 .nav-links li {
-  display: inline;
   margin: 0 15px;
 }
 
 .nav-links a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   font-size: 16px;
 }
 
 .nav-links a:hover {
-  color: #ddd;
+  color: #0066cc;
 }
 
 .language-switcher {
@@ -50,14 +56,22 @@ nav {
 .language-switcher a {
   font-size: 20px;
   text-decoration: none;
+  color: #333;
+}
+
+.language-switcher a:hover {
+  color: #0066cc;
 }
 
 section {
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h1, h2, h3 {
   text-align: center;
+  color: #333;
 }
 
 img {
@@ -66,10 +80,19 @@ img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .project {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
+  padding: 20px;
+}
+
+.project h3 {
+  margin-top: 0;
 }
 
 .project a {
@@ -96,12 +119,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
   .nav-links li {
-    display: block;
     margin: 10px 0;
   }
 
-  .nav-links, .language-switcher {
-    text-align: center;
+  .language-switcher {
+    flex-direction: column;
+  }
+
+  .language-switcher li {
+    margin: 5px 0;
   }
 }
