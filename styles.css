@@ -17,6 +17,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -26,6 +27,12 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
 #hero {
@@ -80,7 +87,11 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
+}
+
+#contact {
+    margin-bottom: 60px;
 }
