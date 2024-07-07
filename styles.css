@@ -27,7 +27,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #333; /* Cambiado a un tono más oscuro */
     text-decoration: none;
     padding: 10px;
 }
@@ -35,6 +35,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
+    color: white; /* Asegúrate de que el texto se vuelva blanco al pasar el ratón */
 }
 
 .language-icon {
