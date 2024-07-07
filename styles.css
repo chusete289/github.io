@@ -10,7 +10,6 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
-    position: relative;
 }
 
 nav ul {
@@ -36,15 +35,15 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.language-switcher {
+.language-switch {
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 10px;
 }
 
-.language-switcher img {
+.language-switch img {
     width: 30px;
-    height: 20px;
+    height: 30px;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -94,17 +93,6 @@ ul li {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-.project a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.project a:hover {
-    text-decoration: underline;
 }
 
 footer {
