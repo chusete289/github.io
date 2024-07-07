@@ -10,6 +10,7 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
@@ -44,8 +45,9 @@ nav ul li a:hover {
 .language-switch img {
     width: 30px;
     height: 30px;
-    margin-left: 10px;
+    margin-left: 5px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 #hero {
@@ -93,6 +95,13 @@ ul li {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+.project a {
+    display: block;
+    margin-top: 10px;
+    color: #1a73e8;
+    text-decoration: none;
 }
 
 footer {
