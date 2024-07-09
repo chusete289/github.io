@@ -46,6 +46,7 @@ let counter = 0;
 const size = images[0].clientWidth;
 
 function updateCarousel() {
+    carouselSlide.style.transition = "transform 0.5s ease-in-out";
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
 
