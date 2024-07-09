@@ -114,7 +114,7 @@ footer {
 
 .carousel {
     position: relative;
-    max-width: 300px; /* Ajusta el tamaño del carrusel */
+    max-width: 500px; /* Ajusta el tamaño del carrusel */
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
