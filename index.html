@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Jesús Carrilero</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <script defer src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 <body>
     <header>
@@ -28,7 +30,7 @@
         </section>
         <section id="about">
             <h2>Sobre mí</h2>
-            <p id="about-text">Soy un apasionado programador informatico con altas capacidades como desarrollador web entre otras. Tengo una gran experiencia en la creación, mantenimiento y diseño de sitios webs dinámicos y responsivos donde consigo transformar una idea en un proyecto digital que sea atractivo para los usuarios y clientes. También trabajo con múltiples tecnologías y frameworks para ofrecer soluciones personalizadas y de gran calidad para mis clientes. Mi objetivo es utilizar mis habilidades para ayudar a las empresas a alcanzar principalmente sus metas a través de las mejores soluciones tecnológicas más innovadoras actualmente y que sigan creciendo y cumpliendo sus objetivos sin apenas darse cuenta.</p>
+            <p id="about-text">Soy un apasionado programador informatico con altas capacidades como desarrollador web entre otras. Tengo una gran experiencia en la creación, mantenimiento y diseño de sitios webs dinámicos y responsivos donde consigo transformar una idea en un proyecto digital que sea atractivo para los usuarios y clientes. También trabajo con múltiples tecnologías y frameworks para ofrecer soluciones personalizadas y de gran calidad para mis clientes. Mi objetivo es utilizar mis habilidades para ayudar a las empresas a alcanzar principalmente sus metas a través de las mejores soluciones tecnológicas más innovadoras actualmente y que sigan creciendo y cumpliendo sus objetivos sin apenas darse cuenta.</p>
         </section>
         <section id="skills">
             <h2>Habilidades</h2>
@@ -57,21 +59,20 @@
                 <a href="https://github.com/iamit010/adventour-tourism-website" target="_blank">Ver proyecto</a>
             </div>
         </section>
-		<section id="carousel">
-    <h2>Galería de Proyectos</h2>
-    <div class="carousel">
-        <div class="carousel-slide" data-index="0">
-            <img src="Captura.JPG" alt="Proyecto 1">
-            <img src="Captura(1).JPG" alt="Proyecto 2">
-            <img src="Captura(2).JPG" alt="Proyecto 3">
-            <img src="explore.png" alt="Proyecto 4">
-            <img src="flights.png" alt="Proyecto 5">
-        </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-    </div>
-</section>
-
+        <section id="carousel">
+            <h2>Galería de Proyectos</h2>
+            <div class="carousel">
+                <div class="carousel-slide" data-index="0">
+                    <a href="Captura.JPG" data-lightbox="project-gallery"><img src="Captura.JPG" alt="Proyecto 1"></a>
+                    <a href="Captura(1).JPG" data-lightbox="project-gallery"><img src="Captura(1).JPG" alt="Proyecto 2"></a>
+                    <a href="Captura(2).JPG" data-lightbox="project-gallery"><img src="Captura(2).JPG" alt="Proyecto 3"></a>
+                    <a href="explore.png" data-lightbox="project-gallery"><img src="explore.png" alt="Proyecto 4"></a>
+                    <a href="flights.png" data-lightbox="project-gallery"><img src="flights.png" alt="Proyecto 5"></a>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
         <section id="contact">
             <h2>Contacto</h2>
             <p>Email: jesuscarrilero3@gmail.com</p>
