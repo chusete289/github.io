@@ -40,26 +40,38 @@ function switchLanguage(lang) {
     }
 }
 const carouselSlide = document.querySelector('.carousel-slide');
-const images = document.querySelectorAll('.carousel img');
+const images = document.querySelectorAll('.carousel-slide img');
+
 let counter = 0;
 const size = images[0].clientWidth;
 
 function updateCarousel() {
-    carouselSlide.style.transition = "transform 0.5s ease-in-out";
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
 
 document.querySelector('.next').addEventListener('click', () => {
-    counter = (counter + 1) % images.length;
+    if (counter >= images.length - 1) {
+        counter = 0;
+    } else {
+        counter++;
+    }
     updateCarousel();
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
-    counter = (counter - 1 + images.length) % images.length;
+    if (counter <= 0) {
+        counter = images.length - 1;
+    } else {
+        counter--;
+    }
     updateCarousel();
 });
 
 setInterval(() => {
-    counter = (counter + 1) % images.length;
+    if (counter >= images.length - 1) {
+        counter = 0;
+    } else {
+        counter++;
+    }
     updateCarousel();
 }, 3000); // Cambia la imagen cada 3 segundos
