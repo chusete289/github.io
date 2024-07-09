@@ -41,20 +41,25 @@ function switchLanguage(lang) {
 }
 const carouselSlide = document.querySelector('.carousel-slide');
 const images = document.querySelectorAll('.carousel img');
-
 let counter = 0;
 const size = images[0].clientWidth;
 
-document.querySelector('.next').addEventListener('click', () => {
-    if (counter >= images.length - 1) return;
+function updateCarousel() {
     carouselSlide.style.transition = "transform 0.5s ease-in-out";
-    counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+}
+
+document.querySelector('.next').addEventListener('click', () => {
+    counter = (counter + 1) % images.length;
+    updateCarousel();
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
-    if (counter <= 0) return;
-    carouselSlide.style.transition = "transform 0.5s ease-in-out";
-    counter--;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    counter = (counter - 1 + images.length) % images.length;
+    updateCarousel();
 });
+
+setInterval(() => {
+    counter = (counter + 1) % images.length;
+    updateCarousel();
+}, 3000); // Cambia la imagen cada 3 segundos
