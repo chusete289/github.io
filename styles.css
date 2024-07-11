@@ -176,19 +176,18 @@ button.prev:hover, button.next:hover {
     text-align: center;
     max-width: 600px;
     margin: 20px auto;
-    font-family: 'Georgia', serif; /* Fuente llamativa para testimonios */
-    font-style: italic;
+    font-family: 'Arial', sans-serif; /* Fuente mejorada para testimonios */
+    font-size: 16px; /* Tamaño de fuente más grande */
 }
 
 .testimonial p {
     margin: 10px 0;
-    font-style: italic;
 }
 
 .testimonial strong {
     display: block;
     margin-top: 10px;
-    font-family: 'Arial', sans-serif; /* Fuente diferente para el nombre */
+    font-size: 18px; /* Tamaño de fuente más grande */
 }
 
 .testimonial-image {
