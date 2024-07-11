@@ -160,6 +160,7 @@ button.prev:hover, button.next:hover {
 
 .project-image {
     width: 100%;
+    max-width: 400px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -172,11 +173,25 @@ button.prev:hover, button.next:hover {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 .testimonial p {
     margin: 10px 0;
     font-style: italic;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+}
+
+.testimonial-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .contact-form {
@@ -214,4 +229,6 @@ button.prev:hover, button.next:hover {
 
 .contact-form button:hover {
     background-color: #555;
+}
+
 }
