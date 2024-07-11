@@ -91,6 +91,16 @@ ul li {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.project-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: contain; /* Mantiene las proporciones de la imagen */
 }
 
 footer {
@@ -106,6 +116,7 @@ footer {
 #contact {
     margin-bottom: 60px;
 }
+
 /* Estilos para el carrusel */
 #carousel {
     text-align: center;
@@ -156,14 +167,6 @@ button.next {
 button.prev:hover, button.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-/* Estilos para las imágenes de los proyectos */
-.project-logo {
-    width: auto;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    object-fit: cover; /* Mantiene las proporciones de la imagen */
-}
 
 /* Estilos para los testimonios */
 .testimonial {
@@ -177,7 +180,7 @@ button.prev:hover, button.next:hover {
     max-width: 600px;
     margin: 20px auto;
     font-family: 'Arial', sans-serif; /* Fuente mejorada para testimonios */
-    font-size: 16px; /* Tamaño de fuente más grande */
+    font-size: 18px; /* Tamaño de fuente más grande */
 }
 
 .testimonial p {
@@ -187,7 +190,7 @@ button.prev:hover, button.next:hover {
 .testimonial strong {
     display: block;
     margin-top: 10px;
-    font-size: 18px; /* Tamaño de fuente más grande */
+    font-size: 20px; /* Tamaño de fuente más grande */
 }
 
 .testimonial-image {
@@ -234,6 +237,4 @@ button.prev:hover, button.next:hover {
 
 .contact-form button:hover {
     background-color: #555;
-}
-
 }
