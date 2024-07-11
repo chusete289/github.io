@@ -16,6 +16,7 @@
                 <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
                 <li><a href="#contact">Contacto</a></li>
                 <li><img src="espanol.png" alt="ES" class="language-icon" onclick="switchLanguage('es')">
                     <img src="ingles.png" alt="EN" class="language-icon" onclick="switchLanguage('en')"></li>
@@ -30,7 +31,7 @@
         </section>
         <section id="about">
             <h2>Sobre mí</h2>
-            <p id="about-text">Soy un apasionado programador informatico con altas capacidades como desarrollador web entre otras. Tengo una gran experiencia en la creación, mantenimiento y diseño de sitios webs dinámicos y responsivos donde consigo transformar una idea en un proyecto digital que sea atractivo para los usuarios y clientes. También trabajo con múltiples tecnologías y frameworks para ofrecer soluciones personalizadas y de gran calidad para mis clientes. Mi objetivo es utilizar mis habilidades para ayudar a las empresas a alcanzar principalmente sus metas a través de las mejores soluciones tecnológicas más innovadoras actualmente y que sigan creciendo y cumpliendo sus objetivos sin apenas darse cuenta.</p>
+            <p id="about-text">Soy un apasionado desarrollador web con experiencia en crear, mantener y diseñar sitios web dinámicos y responsivos. Mi objetivo es transformar ideas en proyectos digitales atractivos, ayudando a las empresas a alcanzar sus metas con soluciones tecnológicas innovadoras.</p>
         </section>
         <section id="skills">
             <h2>Habilidades</h2>
@@ -44,16 +45,19 @@
         <section id="projects">
             <h2>Proyectos</h2>
             <div class="project">
+                <img src="project1.jpg" alt="Culinary King" class="project-image">
                 <h3>E-commerce Platform: Culinary King</h3>
                 <p>Desarrollé una plataforma de comercio electrónico con una colección de productos alimenticios, presentada con características de diseño modernas y CSS avanzado.</p>
                 <a href="https://github.com/roshnideyic365/Culinary-King-e-commerce-website" target="_blank">Ver proyecto</a>
             </div>
             <div class="project">
+                <img src="project2.jpg" alt="TravelLite" class="project-image">
                 <h3>Project Management Application: TravelLite</h3>
                 <p>Creé una aplicación web para una agencia de viajes, utilizando Django y MySQL, con un diseño de Materialize CSS.</p>
                 <a href="https://github.com/anthonyc1/TravelLite" target="_blank">Ver proyecto</a>
             </div>
             <div class="project">
+                <img src="project3.jpg" alt="Adventour" class="project-image">
                 <h3>Data Analysis Tool: Adventour</h3>
                 <p>Desarrollé una herramienta de análisis de datos utilizando HTML, CSS y JavaScript, facilitando la visualización y el análisis de datos para la toma de decisiones estratégicas.</p>
                 <a href="https://github.com/iamit010/adventour-tourism-website" target="_blank">Ver proyecto</a>
@@ -73,10 +77,28 @@
                 <button class="next">&#10095;</button>
             </div>
         </section>
+        <section id="testimonials">
+            <h2>Testimonios</h2>
+            <div class="testimonial">
+                <p>"Jesús es un desarrollador increíble. Su trabajo ha sido esencial para el éxito de nuestro proyecto."</p>
+                <p>- Cliente Satisfecho</p>
+            </div>
+            <div class="testimonial">
+                <p>"La calidad y atención al detalle que Jesús ofrece es excepcional. Lo recomendaría sin dudar."</p>
+                <p>- Otro Cliente Satisfecho</p>
+            </div>
+        </section>
         <section id="contact">
             <h2>Contacto</h2>
-            <p>Email: jesuscarrilero3@gmail.com</p>
-            <p>Teléfono: +34 616 460 352</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
